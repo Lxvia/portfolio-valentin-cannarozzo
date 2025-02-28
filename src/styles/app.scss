@@ -9,7 +9,6 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0 5em 0 5em;
 }
 
 * {
@@ -25,4 +24,8 @@ h1 {
 
 a {
     text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 5em 0 5em;
 }
