@@ -1,26 +1,31 @@
+@use '../variables';
+
+
 .navbar {
     height: 3.5em;
     width: 100%;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: #333;
+    background-color: #262626;
     color: white;
 
     .navbar-links {
         display: flex;
         gap: 2rem;
         justify-content: flex-start;
+        width: 15em;
+
         a {
             text-decoration: none;
-            color: white;
-            font-size: 1.2rem;
+            color: #f9f5ea;
+            font-size: 1rem;
             font-weight: bold;
+            width: auto;
 
             &:hover {
-                color: #f1c40f;
+                color: white;
                 /* Changement de couleur au survol */
             }
         }
@@ -39,6 +44,7 @@
         display: flex;
         gap: 1.5rem;
         justify-content: flex-end;
+        width: 15em;
         /* Alignement des icônes à droite */
     }
 }

@@ -6,9 +6,9 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="navbar-links">
-                <Link to="/">Lien 1</Link>
-                <Link to="/">Lien 2</Link>
-                <Link to="/">Lien 3</Link>
+                <Link to="/">Parcours</Link>
+                <Link to="/">Galerie</Link>
+                <Link to="/">Liennnn</Link>
             </div>
             <h1 className="navbar-title">Valentin C.</h1>
             <div className="navbar-icons">
