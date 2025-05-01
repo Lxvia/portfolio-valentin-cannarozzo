@@ -1,17 +1,35 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import TemporaryAccueil from "./pages/TemporaryAccueil";
-import Home from "./pages/Home";
+// App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import TemporaryAccueil from './pages/TemporaryAccueil';
+import Home from './pages/Home';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const excludedRoutes = ['/']; // Chemins où la Navbar est masquée
+
+  const shouldShowNavbar = !excludedRoutes.includes(location.pathname);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<TemporaryAccueil />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </Router>
-  )
+    <>
+      {shouldShowNavbar && <Navbar />}
+      <div className="wrapper">
+        <Routes>
+          <Route path="/" element={<TemporaryAccueil />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </div>
+    </>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;
