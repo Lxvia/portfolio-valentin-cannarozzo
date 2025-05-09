@@ -14,7 +14,7 @@ function AppContent() {
   return (
     <>
       {shouldShowNavbar && <Navbar />}
-      <div className="wrapper">
+      <div>
         <Routes>
           <Route path="/" element={<TemporaryAccueil />} />
           <Route path="/home" element={<Home />} />

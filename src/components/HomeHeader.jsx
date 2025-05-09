@@ -1,6 +1,6 @@
 import React from 'react'
 import PrimaryButton from './PrimaryButton';
-import valouImg from '../assets/imgs/valou.png';
+import valouImg from '../assets/imgs/valou.jpg';
 
 const HomeHeader = () => {
     return (
